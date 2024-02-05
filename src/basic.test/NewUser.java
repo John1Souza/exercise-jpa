@@ -9,7 +9,7 @@ public class NewUser{
     EntityManager em = emf.createEntityManager();
     
     User newUser = new User("Djalma","djalma@lanche.com.br");
-    newUser.setId(1L);
+
     
     em.getTransaction().begin();
     em.persist(newUser);
