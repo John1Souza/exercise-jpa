@@ -17,6 +17,7 @@ public class User{
   }  
 
   @Id
+  @GeneratedValue
   public Long getId(){
     return id;
   }
