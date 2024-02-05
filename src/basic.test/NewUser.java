@@ -14,12 +14,13 @@ public class NewUser{
     //User("Carlos","carlos@lanche.com.br")
     //User("Lulu","aulu@lanche.com.br")
     //User("Arthur","arthur@lanche.com.br")   
+    //User("Leonardo","leonardo@lanche.com.br")  
 
     
     em.getTransaction().begin();
     em.persist(newUser);
     em.getTransaction().commit();
-
+    System.out.println("The generated ID is: " + newUser.getId());
     
     em.close();
     emf.close();
