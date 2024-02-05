@@ -12,7 +12,7 @@ public class NewUser{
     //User("Rodrigo","rodrigo@lanche.com.br")
     //User("Andre","andre@lanche.com.br")
     //User("Carlos","carlos@lanche.com.br")
-    //User("Lulu","aulu@lanche.com.br")
+    //User("Lulu","lulu@lanche.com.br")
     //User("Arthur","arthur@lanche.com.br")   
     //User("Leonardo","leonardo@lanche.com.br")  
 
