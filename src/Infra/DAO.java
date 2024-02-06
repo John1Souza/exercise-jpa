@@ -1,5 +1,5 @@
 package infra;
 
-public class DAO<E> {
+public class DAO<E extends Entity> {
   
 }
