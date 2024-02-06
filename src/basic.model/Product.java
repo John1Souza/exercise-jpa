@@ -2,7 +2,7 @@ package basic.model;
 
 @Entity
 @Table(name = "tb_products", schema = "java_course")
-public class Product {
+public class Product implements Entity {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
