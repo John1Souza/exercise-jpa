@@ -1,4 +1,4 @@
-package basic.model;
+package model.basic;
 
 @Entity
 public class User{
