@@ -11,5 +11,6 @@ public class GetProducts {
 
     double totalPrice = products.stream().map(p -> p.getPrice()).reduce(0.0, (t, p) -> t + p).doubleValue();
     System.out.println("The total value is $ " +  totalPrice);
+    dao.close();
   }  
 }
