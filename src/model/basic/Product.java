@@ -1,4 +1,4 @@
-package basic.model;
+package model.basic;
 
 @Entity
 @Table(name = "tb_products", schema = "java_course")
