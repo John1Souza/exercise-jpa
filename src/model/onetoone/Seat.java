@@ -17,6 +17,9 @@ public class Seat {
 
   private String name;
 
+  @OneToOne(mappedBy = "seat")
+  private Client cliente;
+
   public Seat(){
 
   }
@@ -40,6 +43,14 @@ public class Seat {
 
   public void setName(String name){
     this.name = name;
+  }
+
+  public String getClient(){
+    return name;
+  }
+
+  public void setClient(Client client){
+    this.client = client;
   }
 
 }
