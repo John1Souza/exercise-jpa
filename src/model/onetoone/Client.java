@@ -15,7 +15,7 @@ import javax.persistence.Table;
 
     private String name;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "seat_id", unique = true)
     private Seat seat;
 
