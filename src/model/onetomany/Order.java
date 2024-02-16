@@ -7,10 +7,15 @@ public class Order{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(nullable = false)
     private Date date;
 
-    public Order(){
+    @OneToMany(mappedBy = "order")
+    private List<OrderItem> items;
 
+    public Order(){
+        this(new Date());
     }
 
     public Order(Date date){
@@ -32,5 +37,13 @@ public class Order{
 
     public void setDate(Date date){
         this.date = date;
+    }
+
+    public List<OrderItem> getItems(){
+        return items;
+    }
+
+    public void setItems(List<OrderItem> items){
+        this.items = items;
     }
 }
