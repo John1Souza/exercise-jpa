@@ -11,7 +11,7 @@ public class Order{
     @Column(nullable = false)
     private Date date;
 
-    @OneToMany(mappedBy = "order")
+    @OneToMany(mappedBy = "order", fetch = FetchType.LAZY) // This is the default value
     private List<OrderItem> items;
 
     public Order(){

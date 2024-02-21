@@ -8,13 +8,14 @@ public class GetOrder {
         DAO<Order> dao = new DAO<>(Order.class);
 
         Order order = dao.getByID(1L);
+        dao.closeDAO()
 
         for(OrderItem item: order.getItems()){
             System.out.println(item.getQuantity());
             System.out.println(item.getProduct().getName());
         }
 
-        dao.closeDAO()
+        
 
     }
 }

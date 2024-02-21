@@ -11,7 +11,7 @@ public class OrderItem {
     @ManyToOne()
     private Order order;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER) // this is the default value
     private Product product;
 
     @Column(nullable = false)
