@@ -11,6 +11,8 @@
             <class>model.onetoone.Client</class>
             <class>model.onetomany.Order</class>
             <class>model.onetomany.OrderItem</class>
+            <class>model.manytomany.Nephew</class>
+            <class>model.manytomany.Uncle</class>
             
             <mapping-file>META-INF/consultas.xml</mapping-file>
             
