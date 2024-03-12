@@ -20,6 +20,38 @@ public class Uncle {
     private String name;
 
     @ManyToMany
-    private List<Nephew> nephews;
+    private List<Nephew> nephews = new ArrayList<>();
+    public Uncle(){
+
+    }
+
+    public Uncle(String name){
+        super();
+        this.name = name;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id){
+        this.id = id;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    } 
+
+    public List<Nephew> getNephews(){
+        return uncles;
+    }
+
+    public void setNephews(List<Nephew> nephews){
+        this.uncles = uncles;
+    }
 
 }

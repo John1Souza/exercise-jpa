@@ -22,4 +22,36 @@ public class Nephew {
     @ManyToMany(mappedBy = "nephews")
     private List<Uncle> uncles = new ArrayList<>();
 
+    public Nephew(){
+
+    }
+
+    public Nephew(String name){
+        super();
+        this.name = name;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id){
+        this.id = id;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    } 
+
+    public List<Uncle> getUncle(){
+        return uncles;
+    }
+
+    public void setUncles(List<Uncle> uncles){
+        this.uncles = uncles;
+    }
 }
