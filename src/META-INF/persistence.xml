@@ -13,6 +13,8 @@
             <class>model.onetomany.OrderItem</class>
             <class>model.manytomany.Nephew</class>
             <class>model.manytomany.Uncle</class>
+            <class>model.manytomany.Movie</class>
+            <class>model.manytomany.Actor</class>
             
             <mapping-file>META-INF/consultas.xml</mapping-file>
             
