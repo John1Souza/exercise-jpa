@@ -70,6 +70,11 @@ public class DAO<E> {
     return null;
   }
 
+  public List<E> consultOne(String consultName, Object... params){
+    List<E> list = consult(consultName, params);
+    return list.isEmpty() ? null : list.get(0);
+  }
+
   public void closeDAO(){
     em.close();
   }
