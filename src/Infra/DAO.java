@@ -61,6 +61,15 @@ public class DAO<E> {
     return query.getResultList();
   }
 
+  public List<E> consult(String consultName, Object... params){
+    TypedQuery<E> query = em.createNamedQuery(consultName, classe);
+
+    for(int i = 0; i < params.length; i += 2){
+      query.setParameter(params[i].toString(), params[i + 1]);
+    }
+    return null;
+  }
+
   public void closeDAO(){
     em.close();
   }
